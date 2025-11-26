@@ -178,3 +178,38 @@ print('\n')
 # Bài 9
 print('Bài 9')
 
+Second_B9 = int(input('Nhập vào số giây: '))
+
+print('\n')
+while (Second_B9 <= 0):
+    print('Số giây không tương ứng')
+    Second_B9 = int(input('Nhập lại số giây: '))
+print('\n')
+    
+    
+def Thoi_Gian_Cu_The (x):
+    if (x < 60):
+        print('Công việc hoàn thành trong: ',x, ' giây', sep = "")
+    elif (Second_B9 >= 60):
+        if (x >= 3600):
+            H = x // 3600
+            x = x - 3600*H
+            if (x >= 60):
+                M = x // 60
+                x = x - 60*M
+                print('Công việc hoàn thành trong: ', H, ' giờ ', M, ' phút ', x, ' giây', sep = "")
+            else:
+                print('Công việc hoàn thành trong: ', H, ' giờ ', x, ' giây', sep = "")
+        else:
+            M = x // 60
+            x = x - 60*M
+            if (x != 0):
+                print('Công việc hoàn thành trong: ',M, ' phút ', x, ' giây', sep = "")
+            else:
+                print('Công việc hoàn thành trong: ',M, ' phút ', sep = "")
+                
+
+Thoi_Gian_Cu_The(Second_B9)
+
+print('\n')
+
