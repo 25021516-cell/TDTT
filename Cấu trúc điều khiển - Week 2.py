@@ -213,3 +213,43 @@ Thoi_Gian_Cu_The(Second_B9)
 
 print('\n')
 
+# Bài 10
+print('Bài 10')
+
+print('Đường tròn có toạ độ tâm I(a, b) và bán kính R')
+
+a_B10 = float(input('Nhập vào toạ độ a: '))
+b_B10 = float(input('Nhập vào toạ độ b: '))
+R_B10 = float(input('Nhập vào độ dài bán kính R: '))
+
+print('\n')
+while (R_B10 <= 0):
+    print('Bán kính không đúng')
+    R_B10 = float(input('Nhập lại bán kính: '))
+print('\n')
+
+print('Nhập toạ độ điểm A(x, y)')
+x_B10 = float(input('Nhập vào toạ độ x: '))
+y_B10 = float(input('Nhập vào toạ độ y: '))
+print('\n')
+
+def Xet_Diem_Thuoc_Duong_Tron (x, y, a, b, R):
+    M = (x - a)**2 + (x - b)**2
+
+    if (M <= R**2):
+        print('Điểm A thuộc đường tròn')
+    else:
+        print('Điểm A không thuộc đường tròn') 
+    
+
+Xet_Diem_Thuoc_Duong_Tron (x_B10, y_B10, a_B10, b_B10, R_B10)
+
+print('\n')
+
+#Bài 11
+print('Bài 11')
+
+x_B11 = float(input('Nhập vào số x: '))
+y_B11 = float(input('Nhập vào số y: '))
+
+print('x^y =', x_B11**y_B11)
