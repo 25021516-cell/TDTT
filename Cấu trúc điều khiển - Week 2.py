@@ -150,12 +150,31 @@ print('Bài 8')
 
 print('Phương trình có dạng: \n ax + by = m \n cx + dy = n')
 
+print('\n')
 a_B8 = float(input('Nhập số a: '))
 b_B8 = float(input('Nhập số b: '))
 c_B8 = float(input('Nhập số c: '))
 d_B8 = float(input('Nhập số d: '))
 m_B8 = float(input('Nhập số m: '))
 n_B8 = float(input('Nhập số n: '))
+print('\n')
 
-# def Phuong_Trinh_Bac_Nhat_Hai_An(a, b, c, d, m, n):
+
+def Phuong_Trinh_Bac_Nhat_Hai_An(a, b, c, d, m, n):
+    D = a*d - b*c
     
+    if (D == 0):
+        print('Phương trình vô nghiệm')
+    else:
+        print('Phương trình bậc hai có nghiệm: '),
+        print('x =', (m*d - n*b)/D)
+        print('y =', (a*n - c*n)/D)
+
+Phuong_Trinh_Bac_Nhat_Hai_An(a_B8, b_B8, c_B8, d_B8, m_B8, n_B8)
+    
+print('\n')
+
+
+# Bài 9
+print('Bài 9')
+
