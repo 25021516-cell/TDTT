@@ -112,3 +112,26 @@ for i in range(a_W4A6, b_W4A6 + 1):
             summ__W4A6 += i
                 
 print(summ__W4A6)
+
+#W4A7
+print('W4A7')
+
+n_W4A7 = int(input('Nhập số nguyên dương n: '))
+test_W4A7 = n_W4A7
+max_W4A7 = 0
+
+while test_W4A7 % 2 == 0:
+    max_W4A7 = 2
+    test_W4A7 //= 2
+    
+i = 3
+while i * i < test_W4A7:
+    while test_W4A7 % i == 0:
+        max_W4A7 = i
+        test_W4A7 //= i
+    i += 2
+
+if test_W4A7 > max_W4A7:
+    max_W4A7 = test_W4A7
+    
+print(max_W4A7)
