@@ -135,3 +135,31 @@ if test_W4A7 > max_W4A7:
     max_W4A7 = test_W4A7
     
 print(max_W4A7)
+
+#W4A8
+print('W4A8')
+
+def Dao_Nguoc(n):
+    return int(str(n)[::-1])
+    
+def Da_Dao_Nguoc(n):
+    return str(n) == str(n)[::-1]
+    
+n_W4A8 = int(input('Nhập số n: '))
+buoc_W4A8  = 0
+
+print(f'Số ban đầu là {n_W4A8}')
+
+while not Da_Dao_Nguoc(n_W4A8):
+    n_W4A8_cu = n_W4A8
+    
+    n_W4A8_dao = Dao_Nguoc(n_W4A8)
+    
+    n_W4A8_moi = n_W4A8 + n_W4A8_dao
+    
+    n_W4A8 = n_W4A8_moi
+    
+    buoc_W4A8 += 1
+
+print(f'Số bước là: {buoc_W4A8}')
+print(f'Số đảo ngược là: {n_W4A8}')
